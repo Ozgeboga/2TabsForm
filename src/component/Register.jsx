@@ -39,9 +39,9 @@ function Register() {
     
     function SubmitButton (){
         if (firstname && lastname && email && password && confirmedPassword && formCheck && password === confirmedPassword){
-            return <Button className="btn-color col" type="submit">Button</Button>
+            return <Button className="btn-color col mb-2" type="submit">Button</Button>
           } else {
-            return <Button className="btn-color col" type="submit" disabled>Button</Button>
+            return <Button className="btn-color col mb-2" type="submit" disabled>Button</Button>
           };
 
          
@@ -57,6 +57,7 @@ function Register() {
                 <Form.Group as={Col} >
                     <Form.Control
                         required
+                        className="form_control"
                         type="text"
                         placeholder="Ad"
                         title="Bu alan en az 3 en fazla 24 karakter içermelidir."
@@ -71,6 +72,7 @@ function Register() {
                 <Form.Group as={Col} >
                     <Form.Control
                         required
+                        className="form_control"
                         type="text"
                         title="Bu alan en az 3 en fazla 24 karakter içermelidir."
                         placeholder="Soyad"
@@ -89,6 +91,7 @@ function Register() {
 
                     <Form.Control
                         required
+                        className="form_control"
                         type="email"
                         placeholder="E-posta adresi"
                         value={email} 
@@ -106,6 +109,7 @@ function Register() {
                     as={Col}>
                     <InputGroup >
                         <Form.Control
+                            className="form_control"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="En az bir sayı , bir büyük harf , bir küçük harf ve toplam en az 8 karakter içermelidir."
                             required
@@ -133,6 +137,7 @@ function Register() {
                     <InputGroup >
                         <Form.Control
                             required
+                            className="form_control"
                             type="password"
                             placeholder="Şifre Onayı"
                             value={confirmedPassword}
@@ -156,7 +161,9 @@ function Register() {
                     label="Önemli kampanyalardan haberdar olmak için Rıza Metni kapsamında elektronik ileti almak istiyorum."
                 />
             </Form.Group>
-            <SubmitButton/>
+            <SubmitButton
+            
+            />
             
         </Form>
     );

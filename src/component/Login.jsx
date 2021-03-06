@@ -38,9 +38,11 @@ function Login() {
                     as={Col}
                     controlId="formBasicEmail">
                     <Form.Control
+                        className="form_control"
                         required
                         type="email"
                         placeholder="E-posta adresi"
+                        
                     />
                    <Form.Control.Feedback>Good!</Form.Control.Feedback>
                      <Form.Control.Feedback type="invalid">Bu alan boş bırakılamaz! Lütfen @ eklediğinizden emin olun!</Form.Control.Feedback>  
@@ -55,6 +57,7 @@ function Login() {
                     <InputGroup>
                         <Form.Control
                             required
+                            className="form_control"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                             ref={passwordControl}

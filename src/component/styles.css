@@ -11,3 +11,6 @@ a.sifre{
 a.sifre:hover{
     text-decoration : none !important;
 }
+.form_control{
+    background-color:rgba(32, 30, 30, 0.13) !important;
+}
