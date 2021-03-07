@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Register from "./Register"
+import Signup from "./Signup"
 import Login from "./Login"
 import "./tabstyle.css"
 
@@ -11,7 +11,7 @@ function TabsComp() {
 
     return (
         <div className="row justify-content-center mt-5">
-            <div className="col-sm-3 border">
+            <div className="col-8 col-sm-6 col-md-4 col-lg-3 border ">
                 <Tabs
                     id="uncontrolled-tab-example"
                     defaultActiveKey="login"
@@ -25,10 +25,10 @@ function TabsComp() {
                         <Login />
                     </Tab>
                     <Tab
-                     eventKey="register" 
-                     title="Kayıt Ol"
+                     eventKey="signup" 
+                     title="Üye Ol"
                      >
-                        <Register />
+                        <Signup />
                     </Tab>
                 </Tabs>
             </div>

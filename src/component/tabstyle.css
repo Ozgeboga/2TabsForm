@@ -1,4 +1,16 @@
+.nav-tabs .nav-item.nav-link{
+    background-color: rgba(32, 30, 30, 0.13);
+}
 .nav-tabs .nav-item.nav-link.active{
-  background-color:  rgba(32, 30, 30, 0.13) !important;
+  background-color:  white !important;
+}
+.nav-item.nav-link{
+  color : #495057;
 }
 
+/* .nav-tabs .nav-link{
+  border-bottom: .25rem !important;
+} */
+/* .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-bottom: .25rem;
+} */
